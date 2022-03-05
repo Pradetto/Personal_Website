@@ -1,0 +1,65 @@
+.contact{
+    background-color: white;
+    display: flex;
+
+    .left{
+        flex: 1;
+        overflow: hidden;
+        img{
+            height: 100%;
+        }
+    }
+    .right{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2{
+            font-size: 30px;
+        }
+        
+        form{
+            width: 70%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around; // jc center if you want them touching
+
+            input{
+                width: 600px; //normally 300
+                height: 30px; //normally 30
+                font-size: 14px;
+            }
+            textarea{
+                width: 600px; //normally 300
+                height: 400px; // normally 200
+                font-size: 14px;
+
+            }
+
+            button{
+                width: 150px;
+                height: 30px;
+                color: white;
+                background-color: crimson;
+                border: none;
+                border-radius: 10px;
+                font-weight: 500;
+                cursor: pointer;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            span{
+                color: green;
+            }
+        }
+
+
+    }
+}

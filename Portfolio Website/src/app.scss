@@ -1,0 +1,23 @@
+.app{
+    height: 100vh;
+
+    .sections{
+        width: 100%;
+        height: calc(100vh - 70px); // since you have a topbar you have to calculate
+        background-color: lightsalmon;
+        position: relative;
+        top: 70px;
+        scroll-behavior: smooth; // when you click the logo top left it makes you scroll back to the top of the page smoothly
+        scroll-snap-type: y mandatory; // forces viewer to page view
+        scrollbar-width: none; // for firefox
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        > *{
+            width: 100vw;
+            height: calc(100vh - 70px);
+            scroll-snap-align: start; // forces viewer to page view
+        }
+    }
+}
