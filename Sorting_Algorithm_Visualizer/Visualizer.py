@@ -41,5 +41,3 @@ class DrawInformation:
         self.block_width = round((self.width - self.SIDE_PAD) / len(lst)) #you have the area you can represent the number of blocks in
         self.block_height = round((self.height - self.TOP_PAD) / (self.max_val - self.min_val)) # tells you how many distinct numbers you have and weighs in how high and small your blocks are
         self.start_x = self.SIDE_PAD // 2 # bottom left of screen is 0,0
-
-print(test)
