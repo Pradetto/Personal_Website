@@ -1,10 +1,12 @@
 # Remember this is to get the requirements
 
+# source sorting_algorithm_visualizer/venv/bin/activate
 # python3 -m venv venv
 # pip3 freeze > requirements.txt  
 # cd into sorting_algo_visualizer
 # activate virtual environment through source venv/bin/activate
 # pip3 install -r requirements.txt 
+
 
 import pygame
 import random
