@@ -27,7 +27,8 @@ class DrawInformation:
         (192,192,192),
     ]
 
-    
+    FONT = pygame.font.SysFont('comicsans', 20)
+    LARGE_FONT = pygame.font.SysFont('comicsans', 40)
     SIDE_PAD = 100
     TOP_PAD = 150
 
@@ -56,6 +57,13 @@ class DrawInformation:
 
 def draw(draw_info): # you redrawn the canvas everytime ... not the most efficient way refer to line 96 for draw info
     draw_info.window.fill(draw_info.BACKGROUND_COLOR)
+
+    controls = draw_info.FONT.render("R - Reset | SPACE - Start Sorting | A - Ascending | D - Descending", 1, draw_info.BLACK)
+    draw_info.window.blit(controls, (draw_info.width/2 - controls.get_width()/2,5)) #43 minute explanation 5 pixels below
+
+    sorting = draw_info.FONT.render("I - Insertion Sort | B - Bubble Sort | TBD - tbd | TBD - tbd", 1, draw_info.BLACK)
+    draw_info.window.blit(sorting, (draw_info.width/2 - sorting.get_width()/2,35)) #43 minute explanation 35 pixels below
+
     draw_list(draw_info)
     pygame.display.update()
 
