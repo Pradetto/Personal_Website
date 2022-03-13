@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://Pradetto.github.io/Website/",
+  "homepage": "https://Pradetto.github.io/Websites/",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.3",
